@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+.DS_Store/
+.gulp-scss-cache/
+.jshintrc
+web/app/config/db.js
+web/app/public/build/css
+web/app/public/build/js
+.sass-cache/

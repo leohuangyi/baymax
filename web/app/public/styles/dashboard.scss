@@ -1,0 +1,16 @@
+.dashboard{
+	#user-query-chart,
+	#all-query-chart{
+		height: 18rem;
+	}
+	#map-chart-parent{
+		position: relative;
+		margin: 0 1rem;
+		height: 40rem;
+		#map-chart{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+}

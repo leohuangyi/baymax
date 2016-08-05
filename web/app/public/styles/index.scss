@@ -1,0 +1,29 @@
+.login-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.title {
+		margin-bottom: 2rem;
+	}
+	.form-box {
+		border: 1px solid #ccc;
+		border-radius: .5rem;
+		padding: 2rem;
+	}
+	.fields {
+		.login-input {
+			padding-right: 0 !important;
+
+			#password-label {
+				width: 39px;
+			}
+		}
+	}
+	#submit {
+		width: 237px;
+	}
+
+}

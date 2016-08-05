@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Messages{% endblock %}|Baymax智能管理、训练系统</title>
+    <link rel="stylesheet" type="text/css" href="libs/semantic-ui/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="build/css/main.css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+<section id="content">
+    {% block content %}
+    <p>Forgot to add content?</p>
+    {% endblock %}
+</section>
+<script src="libs/sea.js"></script>
+<script src="libs/jquery-3.1.0.min.js"></script>
+<script src="libs/semantic-ui/semantic.min.js"></script>
+<script>
+  seajs.config({
+    base: "/",
+  });
+</script>
+{% block javascript %}{% endblock %}
+{% block mainLayoutScript %}{% endblock %}
+</body>
+</html>

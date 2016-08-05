@@ -1,0 +1,86 @@
+{% extends 'main-layout.html' %}
+
+{% block title %}知识库{% endblock %}
+
+{% block mainContent %}
+<div class="ui grid container page-box">
+	<div class="ui one column row">
+		<div class="column">
+			<div class="list-box">
+				<table id="list-table" class="ui celled table" cellspacing="0" width="100%">
+					<thead>
+					<tr>
+						<th>编号</th>
+						<th>问题</th>
+						<th>答案</th>
+						<th>匹配模式</th>
+						<th>类型</th>
+						<th>创建日期</th>
+						<th>更新日期</th>
+						<th>操作</th>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<button class="ui green button createObj">新增</button>
+				<div class="form-container hide">
+					<h4 class="ui horizontal divider header">
+						<i class="tag icon"></i>
+						详情
+					</h4>
+					<div class="ui form question-form">
+						<div class="inline fields">
+							<label>匹配模式: </label>
+							<div class="field">
+								<div class="ui radio">
+									<input id="normal-match" type="radio" value="1" name="type" tabindex="0" checked=""
+										   class="hidden radio-input">
+									<label for="normal-match">普通匹配</label>
+								</div>
+							</div>
+							<div class="field">
+								<div class="ui radio">
+									<input id="reg-match" type="radio" value="2" name="type" tabindex="0"
+										   class="hidden radio-input">
+									<label for="reg-match">正则匹配</label>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label>问题</label>
+							<textarea id="question" rows="2"></textarea>
+						</div>
+						<div class="field">
+							<label>答案</label>
+							<textarea id="answer" rows="2"></textarea>
+						</div>
+
+						<div class="button-group">
+							<div class="ui buttons">
+								<button class="ui button cancel cancelBtn">取消</button>
+								<div class="or"></div>
+								<button class="ui positive button saveBtn">保存</button>
+							</div>
+							<button class="ui button negative deleteBtn">删除</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="libs/dataTables/media/css/dataTables.semanticui.min.css">
+<link rel="stylesheet" type="text/css" href="build/css/list.css">
+{% endblock %}
+
+{% block javascript %}
+<script src="libs/dataTables/media/js/jquery.dataTables.min.js"></script>
+<script src="libs/dataTables/media/js/dataTables.semanticui.min.js"></script>
+<script>
+	seajs.use('build/js/list/list.js');
+</script>
+{% endblock %}

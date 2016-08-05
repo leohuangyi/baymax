@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %}登录{% endblock %}
+
+{% block content %}
+<div class="ui form login-container">
+	<h1 class="title">Baymax智能管理、训练系统</h1>
+	<div class="form-box">
+		<div class="inline fields">
+			<div class="field login-input">
+				<label id="license-label">车牌号</label>
+				<input id="license" type="text" placeholder="请输入您的车牌号">
+			</div>
+		</div>
+		<div class="inline fields">
+			<div class="field login-input">
+				<label id="password-label">密码</label>
+				<input id="password" type="password" placeholder="请输入您的密码">
+			</div>
+		</div>
+		<div id="submit" class="fluid teal ui button">登录</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="build/css/index.css">
+{% endblock %}
+
+{% block javascript %}
+  <script>
+    seajs.use('build/js/index/index.js');
+  </script>
+{% endblock %}

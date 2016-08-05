@@ -1,0 +1,17 @@
+{
+	"name": "baymax",
+	"version": "1.0.0",
+	"description": "Baymax是一款模拟未来汽车的虚拟机器人，他具备以下优点：",
+	"main": "Readme.md",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node ./web/app/app.js",
+		"startSlack": "node ./slack/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@code.csdn.net:leohuangyi/baymax.git"
+	},
+	"author": "Leo",
+	"license": "ISC"
+}

@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container-box">
+    <div class="main-sidebar">
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="name-container">
+                <div class="english">baymax</div>
+                <div class="chinese">大白</div>
+            </div>
+        </div>
+
+        <div class="menu-list">
+			<div class="menu-item">
+				<a href="/dashboard">
+					<i class="home icon"></i>&nbsp;仪表盘
+				</a>
+			</div>
+            <div class="menu-item">
+                <a href="/list">
+					<i class="pie chart icon"></i>&nbsp;知识库
+				</a>
+            </div>
+        </div>
+
+        <div class="menu-footer">
+            <div id="license">
+
+            </div>
+            <div id="logout" class="fluid red ui button">注销</div>
+        </div>
+    </div>
+
+    <div class="main-container">
+		{% block mainContent %}
+		<p>Forgot to add content?</p>
+		{% endblock %}
+    </div>
+</div>
+{% endblock %}
+
+{% block mainLayoutScript %}
+	<script>
+		seajs.use('/build/js/main-layout/main-layout.js');
+	</script>
+{% endblock %}

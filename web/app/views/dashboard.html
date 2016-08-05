@@ -1,0 +1,37 @@
+{% extends 'main-layout.html' %}
+
+{% block title %}仪表盘{% endblock %}
+
+{% block mainContent %}
+<div class="ui grid dashboard container page-box">
+	<div class="ui one column row">
+		<div class="column">
+			<div id="map-chart-parent">
+				<div id="map-chart"></div>
+			</div>
+		</div>
+	</div>
+	<div class="ui stackable two column row">
+		<div class="column">
+			<div id="user-query-chart"></div>
+		</div>
+		<div class="column">
+			<div id="all-query-chart"></div>
+		</div>
+	</div>
+
+</div>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="build/css/dashboard.css">
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="libs/echarts.min.js"></script>
+<script type="text/javascript" src="libs/shanghai.js"></script>
+<script type="text/javascript" src="libs/china.js"></script>
+<script>
+	seajs.use('build/js/dashboard.js');
+</script>
+{% endblock %}
