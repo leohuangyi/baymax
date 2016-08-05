@@ -7,11 +7,11 @@ Baymax是一款模拟未来汽车的虚拟机器人，他具备以下优点：
 
 # 使用方法
 
-目前Baymax主要通过[Slack](http://clever.slack.com) Bot User来进行交互
+目前Baymax主要通过[Slack](http://clevercar.slack.com) Bot User来进行交互
 
 由于开发时间仓促，还没来得及将它上架成公用bot。您需要使用我的slack team中的账号来进行测试。
 
-1. 登录[Slack](http://clever.slack.com)，账户密码请向leohuangyi@foxmail.com索取。
+1. 登录[Slack](http://clevercar.slack.com)，账户密码请向leohuangyi@foxmail.com索取。
 2. 使用指令`#create#车牌#密码`绑定您的车牌
 3. 现在就可以直接进行交互啦
 
