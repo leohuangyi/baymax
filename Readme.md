@@ -22,4 +22,4 @@ Baymax是一款模拟未来汽车的虚拟机器人，他具备以下优点：
 
 # Baymax响应流程图
 
-![Bayma响应流程](http://pubassets.oss-cn-shanghai.aliyuncs.com/img/Baymax.png)
+![Bayma响应流程](http://pubassets.oss-cn-shanghai.aliyuncs.com/img/Baymax2.png)
